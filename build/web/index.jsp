@@ -8,45 +8,45 @@
 <!DOCTYPE httml>
     <head>
         <meta http-equiv="Content-Type" content="ml; charset=UTF-8">
+        <!--Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
         <title>Título</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
-        <%! String nombre1;
-        static final double PI = 3.159;%>
-        <% 
-            String nombre="Mariana";
-            String telefono = "3123888795";
-            int salario = 1000000;
-            double impuesto = 0.19;
-            
-        %>
+    <body class="p-3">
+        <div class="m-auto w-75">
+            <h1>Formulario</h1>
         
-        <form name="form1" action="index.jsp" method="POST">
-            Nombre:
-            <input type="text" name="txtNombre" id="txtNombre" 
-                   value="<%=nombre%>"/> <br/>
-            Telefono: 
-            <input type="text" name="txtTelefono" id="txtTelefono" 
-                   value="<%=telefono%>" /> <br/>
-            Salario:
-            <input type="text" name="txtSalario" id="txtSalario" 
-                   value="<%=salario%>" /> <br/>
-            Impuesto:
-            <input type="text" name="txtImpuesto" id="txtImpuesto" value="<%=impuesto%>" /> <br/>
-            
-            
-            <input type="submit" value="Enviar" name="btnEnviar" />
-        </form>
+            <form name="form1" action="Views/principal.jsp" method="GET" class="row g-3">
+                <div class="col-md-6">
+                    <label for="txtNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="txtNombre" id="txtNombre" 
+                       value=""/> <br/>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="txtTelefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" name="txtTelefono" id="txtTelefono" 
+                       value=""/> <br/>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="txtSalario" class="form-label">Salario</label>
+                    <input type="text" class="form-control" name="txtSalario" id="txtSalario" 
+                       value=""/> <br/>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="txtImpuesto" class="form-label">Impuesto</label>
+                    <input type="text" class="form-control" name="txtImpuesto" id="txtImpuesto" 
+                       value=""/> <br/>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         
+        </div>
         
-        <p>
-            El nombre es: <%=nombre%> <br/>
-            El telefono es: <%=telefono%> <br/>
-            El Salario es: <%=salario%> <br/>
-            El impuesto es es: <%=impuesto%> <br/>
-            <%-- comentario JSP --%>
-            <!-- COMENTARIO HTML -->
-        </p>
     </body>
 </html>
