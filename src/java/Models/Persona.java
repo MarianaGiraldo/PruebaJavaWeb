@@ -76,13 +76,13 @@ public class Persona {
     public String purchaseParkingPlass(){
         String cadena;
         cadena = "El parqueadero ha sido asignado: "
-                + "Nombre: "
+                + "<br/> <b>Nombre:</b> "
                 + this.getNombre() 
-                + ", Telefono: "
+                + "<br/> <b>Telefono:</b> "
                 + this.getTelefono()
-                + ", Correo: "
+                + "<br/> <b>Correo:</b> "
                 + this.getCorreo()
-                + ", Salario: "
+                + "<br/> <b>Salario:</b> "
                 + this.getSalario();
         return cadena;
     }

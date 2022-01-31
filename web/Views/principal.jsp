@@ -16,18 +16,19 @@
         <div class="m-auto w-75">
             <h1>Datos</h1>
             <div>
-                <p>
-                    <form name="regresar" action="../index.jsp">
-                        <% Persona p = new Persona(); 
+                <p> 
+                    <% Persona p = new Persona(); 
                          
-                            p.setNombre(request.getParameter("txtNombre")); 
-                            p.setTelefono(request.getParameter("txtTelefono"));
-                            p.setSalario(Integer.parseInt(request.getParameter("txtSalario")));
-                            p.setCorreo( request.getParameter("txtCorreo")); 
-                        %>
+                        p.setNombre(request.getParameter("txtNombre")); 
+                        p.setTelefono(request.getParameter("txtTelefono"));
+                        p.setSalario(Integer.parseInt(request.getParameter("txtSalario")));
+                        p.setCorreo( request.getParameter("txtCorreo")); 
+                    %>
                         
 
-                        <%= p.purchaseParkingPlass() %>
+                    <%= p.purchaseParkingPlass() %>
+                        
+                    <form name="regresar" action="../index.jsp">
                         <input type="submit" value="Regresar" name="btnRegresar" />
                     </form>
                 </p>
