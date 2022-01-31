@@ -38,8 +38,8 @@
                 </div>
                 
                 <div class="col-md-6">
-                    <label for="txtImpuesto" class="form-label">Impuesto</label>
-                    <input type="text" class="form-control" name="txtImpuesto" id="txtImpuesto" 
+                    <label for="txtCorreo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" name="txtCorreo" id="txtCorreo" 
                        value=""/> <br/>
                 </div>
                 
